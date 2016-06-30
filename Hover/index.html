@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hover</title>
+
+    <!-- css -->
+    <!--<link href="css/normalize.css" rel="stylesheet">-->
+    <!--&lt;!&ndash;据说是优化的css重置，测试一下有什么用&ndash;&gt;-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style>
+
+    a:hover,a:focus, a:active {
+        color: #696969;
+        text-decoration: none;
+    }
+
+    a {
+        color: #696969;
+        margin: 10px;
+        padding: 15px 20px;
+        background-color: rgb(230, 230, 230);
+    }
+
+    a:active {
+        position: relative;
+        top: 2px
+    }
+
+    header {
+        width: 70%;;
+        margin: 50px auto;
+    }
+    .item-title{
+        font-size: 24px;
+        margin: 50px 0 20px;
+    }
+
+</style>
+<body>
+<div class="container" style="margin-bottom: 100px;max-width: 900px">
+    <header class="jumbotron" style="background:#30C9C7 url('banner.jpg') no-repeat scroll;background-size:cover;">
+        <div class="container">
+            <h1 class="text-center">My Hover</h1>
+        </div>
+    </header>
+    <div>
+        <div class="item-title">2D变化</div>
+        <a href="javascript:" class="grow">放大</a>
+        <a href="javascript:" class="shrink">缩小</a>
+        <a href="javascript:" class="pulse">心跳</a>
+        <a href="javascript:" class="pulse-fast">心跳加速</a>
+        <a href="javascript:" class="bounce-in">放大跳动</a>
+        <a href="javascript:" class="bounce-out">缩小跳动</a>
+        <a href="javascript:" class="rotate">倾斜</a>
+        <a href="javascript:" class="rotate-grow">放大倾斜</a>
+        <a href="javascript:" class="translate-up">上浮</a>
+        <a href="javascript:" class="translate-down">下沉</a>
+        <a href="javascript:" class="skew">倾斜</a>
+        <a href="javascript:" class="skew-top-r">头右倾</a>
+        <a href="javascript:" class="skew-top-l">头左倾</a>
+        <a href="javascript:" class="wobble-horizontal">左右摇摆</a>
+        <a href="javascript:" class="wobble-vertical">上下摇摆</a>
+        <a href="javascript:" class="wobble-tl-to-br">对角摇摆</a>
+        <a href="javascript:" class="wobble-top">果冻</a>
+        <a href="javascript:" class="shake">震动</a>
+        <a href="javascript:" class="shake-out">震动2</a>
+
+
+        <div class="item-title">背景变化</div>
+        <a href="javascript:" class="fade-in">淡入</a>
+        <a href="javascript:" class="bg-pulse">闪动</a>
+        <a href="javascript:" class="sweep-to-right">横扫</a>
+        <a href="javascript:" class="sweep-to-right2">横扫2</a>
+        <a href="javascript:" class="sweep-to-right3">横扫3</a>
+        <a href="javascript:" class="sweep-to-bottom">窗帘</a>
+        <a href="javascript:" class="rectangle-out">矩形向外</a>
+        <a href="javascript:" class="rectangle-in">矩形向内</a>
+        <a href="javascript:" class="radial-out">径向向外</a>
+        <a href="javascript:" class="radial-in">径向向内</a>
+        <a href="javascript:" class="shutter-in-horizontal">关门</a>
+        <a href="javascript:" class="shutter-out-horizontal">水平张开</a>
+        <a href="javascript:" class="shutter-in-vertical">垂直关闭</a>
+        <a href="javascript:" class="shutter-out-vertical">垂直张开</a>
+
+        <div class="item-title">边框变化</div>
+        <a href="javascript:" class="border-fade">边框1</a>
+        <a href="javascript:" class="hollow">Hollow</a>
+        <a href="javascript:" class="trim">内边框淡入</a>
+        <a href="javascript:" class="ripple-out">波纹（向外）</a>
+        <a href="javascript:" class="ripple-in">波纹（向内 ）</a>
+        <a href="javascript:" class="outline-out">外边框</a>
+        <a href="javascript:" class="outline-in">外边框2</a>
+        <a href="javascript:" class="round-corners">圆角</a>
+        <a href="javascript:" class="reveal">边框2</a>
+        <a href="javascript:" class="underline">下划线</a>
+        <a href="javascript:" class="underline-from-left">下划线2</a>
+        <a href="javascript:" class="underline-from-left2">下划线3</a>
+        <a href="javascript:" class="underline-from-left3">下划线4</a>
+        <a href="javascript:" class="underline-from-left4">下划线5</a>
+
+        <div class="item-title">阴影变化</div>
+        <a href="javascript:" class="float-shadow">漂浮</a>
+        <a href="javascript:" class="shadow-around">四周</a>
+        <a href="javascript:" class="up-shadow">向前移动</a>
+        <a href="javascript:" class="down-shadow">凹陷</a>
+        <div class="item-title">其它</div>
+        <a href="javascript:" class="curl-bottom-right">翻页</a>
+        <a href="javascript:" class="bubbles-left">对话气泡</a>
+
+    </div>
+</div>
+<!--js-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
